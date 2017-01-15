@@ -20,14 +20,22 @@ export default class AwesomeProject extends Component {
         <Text style={styles.welcome}>
           Rafi Ramadhan Isakh
         </Text>
-        <Image source={require('./profile.jpg')}/>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <Image
+          style={{
+            width: 150,
+            height:200,
+            marginTop: 10,
+            borderWidth: 1,
+            borderRadius: 10,
+            borderColor: '#000000',
+          }}
+          source={require('./asset/image/profile.jpg')}/>
+          <Text style={styles.welcome}>
+            Refactory
+          </Text>
+          <Text style={styles.instructions}>
+            Batch 1 - Camorra
+          </Text>
       </View>
     );
   }
@@ -36,12 +44,12 @@ export default class AwesomeProject extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    // justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 15,
     textAlign: 'center',
     margin: 10,
   },
